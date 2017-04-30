@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethan&#39;s PMbook</title>
+    <link>http://chaomifan.github.io/</link>
+    <description>Recent content on Ethan&#39;s PMbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Written by Ethan</copyright>
+    
+	<atom:link href="http://chaomifan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://chaomifan.github.io/readme---2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chaomifan.github.io/readme---2/</guid>
+      <description>Hyde Hyde is a brazen two-column hugo theme based on the Jekyll theme of the same name. It pairs a prominent sidebar with uncomplicated content.
+Contents  Installation Options  Sidebar menu Sticky sidebar content Themes Reverse layout Disqus  Author Ported by License  Installation To install Hyde as your default theme, first install this repository in the themes/ directory:
+$ cd themes/ $ git clone https://github.com/spf13/hyde.git  Second, specify hyde as your default theme in the config.</description>
+    </item>
+    
+  </channel>
+</rss>
