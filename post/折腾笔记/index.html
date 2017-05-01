@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    折腾笔记 | Ethan&#39;s PMbook
+    Hugo&#43;GitHub 静态博客 折腾笔记 | Ethan&#39;s PMbook
   </title>
 
 
@@ -62,7 +62,7 @@
   
   <main id="single" role="main">
     <div class="article-header">
-      <h1>折腾笔记</h1>
+      <h1>Hugo&#43;GitHub 静态博客 折腾笔记</h1>
       <div class="meta">
         May 1, 2017 &nbsp;
         
@@ -73,17 +73,348 @@
       </div>
     </div>
     <article>
-      
+      <h2 id="为了个人博客">为了个人博客</h2>
 
-<h3 id="五一折腾-hugo-纪实">五一折腾 hugo 纪实</h3>
+<p>五一期间，用 WordPress 为好朋友的公司配置了一个网站，替换原来的建议公司官网，在搭建的过程中，萌生了建立一个独立个人博客的想法，恰巧节前技术总监木头大大着重安利了 Hugo 这个静态博客建站工具，于是就开始了一天一夜的折腾之旅</p>
 
-<ol>
+<p></p>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+<li>环境介绍+个人知识储备</li>
+<li>iterm2 + oh-my-zsh install + homebrew update</li>
 <li>hugo 安装</li>
-<li>git 按照与部署</li>
-<li>homebrew update</li>
-<li>iterm2 + oh-my-zsh update</li>
-</ol>
+<li>git 安装与部署</li>
+<li>个性域名绑定</li>
+<li>原型文件上传至 GitHub 并浏览（实施之前看到的文章方法）</li>
+</ul>
 
+<h2 id="环境介绍">环境介绍</h2>
+
+<p>我一共有三台机器：
+* 公司 iMac
+* 移动 MacBook Pro
+* 家里 黑苹果（兼容性不错，性能超好）
+五一期间在身边的是 黑苹果和 MacBook，其中 MacBook pro 里面 iterm2+oh-my-zsh 没有配置完全；</p>
+
+<p>另外由于我不是 Coder 因此，git、 html、 go 语言以及 Hugo 都属于知识空白，需要一边看文档，一边度娘；
+好在网上文档和文章较多，我还算能钻研，但是后面还是遇到了不少坑，填坑花了不少时间；</p>
+
+<h2 id="iterm2-oh-my-zsh-update-homebrew-update">iterm2 + oh-my-zsh update+ homebrew update</h2>
+
+<p><strong>step 1: update iterm2 + oh-my-zsh  之前黑苹果已经配置好 MacBook Pro 重新配置了一次</strong></p>
+
+<blockquote>
+<p>参考文档：<a href="http://www.jianshu.com/p/7de00c73a2bb">http://www.jianshu.com/p/7de00c73a2bb</a></p>
+</blockquote>
+
+<p><strong>step 2: 安装+update  homebre</strong></p>
+
+<p>mac 下超好用神器，黑苹果已经久没有更新过发现很多软件已经过期了
+&gt; 安装文档：<a href="https://brew.sh">https://brew.sh</a></p>
+
+<p>Mac下终端安装命令：</p>
+
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>更新命令(会更新 homebrew和 由其安装的所有软件)：</p>
+
+<pre><code>$ brew update
+</code></pre>
+
+<p>之前由于黑苹果的 homebrew 版本很低，导致 brew 安装 hugo 的版本也较低。重新 update 之后 hugo 版本升级到最新</p>
+
+<p><strong>step 3: 安装oh-my-zsh plugin</strong></p>
+
+<p>如何开启和安装 oh-my-zsh plugin 具体可百度和参考上文中列出的参考文章；
+本次需要用到 git 插件，同时墙裂推荐 自动补全插件  inrc 和 高亮插件 zsh-syntax-highlighting</p>
+
+<h2 id="hugo-安装">hugo 安装</h2>
+
+<p>Mac 下安装 hugo 非常方便</p>
+
+<pre><code>$ brew hugo
+</code></pre>
+
+<p>hugo 的操作文档可参考如下网站：</p>
+
+<blockquote>
+<p>中文文档：<a href="http://www.gohugo.org">http://www.gohugo.org</a></p>
+
+<p>英文文档：<a href="http://gohugo.io/overview/quickstart/">http://gohugo.io/overview/quickstart/</a></p>
+</blockquote>
+
+<p>hugo 建立站点和发文的内容和步骤不在此介绍了，文档上都有，下面重点说一下我折腾 theme 的主要过程</p>
+
+<hr />
+
+<p><strong>下载 theme</strong>
+我在 网站上下载了 几套皮肤预览了一下，最后选择了性冷淡的主题 “Angel&rsquo;s Ladder”  主题风格比较简单，内容纯文本界面，基本没有什么需要填充和修改图的地方；</p>
+
+<blockquote>
+<p>皮肤下载：<a href="http://www.gohugo.org/theme/angels-ladder/">http://www.gohugo.org/theme/angels-ladder/</a></p>
+
+<p>作者官方网站：<a href="http://tanksuzuki.com">http://tanksuzuki.com</a></p>
+</blockquote>
+
+<p><img src="/images/post_img/tanksuzuki.png" alt="官网截图" /></p>
+
+<p>这个主题蛮喜欢，但是有两点没满足要求：</p>
+
+<ul>
+<li>字体替换 （个人很喜欢苹果系统的手札体，经测试网站也可引用）</li>
+<li>header 部分的社交账号默认是 Twitter、Facebook，不适合于国内；</li>
+<li>没有文章分类（hugo 支持分类）</li>
+<li>没有文章摘要（很奇怪，作者官网的模板有，但下载的模板没有    <em>：(</em></li>
+</ul>
+
+<hr />
+
+<p><strong><em>以下是修改 Angel&rsquo;s Ladder 主题的步骤和方法</em></strong></p>
+
+<p><strong>字体替换</strong></p>
+
+<p>进入 <strong>angels-ladder/static/css</strong> 文件夹，用编辑器打开 <strong>theme.css</strong> 文件
+编辑如下代码中的 font-family 值，将需要的字体替换</p>
+
+<pre><code>body 
+{
+  background-color: #fff;
+  font-family: &quot;Hannotate SC&quot;, Meiryo, sans-serif;
+  /*font-family: &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, sans-serif;*/
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+}
+</code></pre>
+
+<blockquote>
+<p>不知道字体如何对应的 请前往：<a href="http://www.zhangxinxu.com/study/201703/font-family-chinese-english.html">CSS font-family中文字体对应的英文名称一览表</a></p>
+</blockquote>
+
+<hr />
+
+<p><strong>添加替换国内的社交账号</strong></p>
+
+<p>我根据自己的情况添加</p>
+
+<ul>
+<li>新浪微博：Weibo</li>
+<li>微信：Wechat</li>
+<li>简书：JianShu</li>
+<li>邮件：Mail Me</li>
+</ul>
+
+<p>保留</p>
+
+<ul>
+<li>GitHub</li>
+</ul>
+
+<p>删除</p>
+
+<ul>
+<li>Twitter</li>
+<li>Facebook</li>
+</ul>
+
+<p>进入 <strong>angels-ladder/layouts/partials/</strong>文件夹，用编辑器打开<strong>header.html</strong>文件
+编辑如下代码中的 <strong>ul</strong> 内的内容;
+另外 <strong>Site.Params.xx</strong> 需要在 hugo 网站根目录中的 <strong>config.toml</strong> 文件中定义</p>
+
+<pre><code>  &lt;header role=&quot;banner&quot;&gt;
+    &lt;div class=&quot;row gutters&quot;&gt;
+      &lt;div id=&quot;site-title&quot; class=&quot;col span_6&quot;&gt;
+        &lt;h1&gt;&lt;a href=&quot;{{ .Site.BaseURL }}&quot;&gt;{{ .Site.Title }}&lt;/a&gt;&lt;/h1&gt;
+        {{ with .Site.Params.subtitle }}&lt;h2&gt;{{ . }}&lt;/h2&gt;{{ end }}
+      &lt;/div&gt;
+      &lt;div id=&quot;social&quot; class=&quot;col span_6&quot;&gt;
+        &lt;ul&gt;
+          {{ with .Site.Params.weibo }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;Weibo&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.wechat }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;Wechat&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.jianshu }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;JianShu&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.github }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.mail }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;Mail Me&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ if .Site.Params.showsRSS }}&lt;li&gt;&lt;a href=&quot;{{ .Site.BaseURL }}index.xml&quot; type=&quot;application/rss+xml&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;&lt;/li&gt;{{ end }}
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+</code></pre>
+
+<p>贴上我的 <strong>config.toml</strong>文件中 Params 定义（有部分 params 是为了添加文章分类页面设置的）</p>
+
+<pre><code>[params]
+subtitle = &quot;信心是黑暗中的灯塔，任何时候都不能丢&quot;
+about = &quot;/about&quot;
+weibo = &quot;http://www.baidu.com&quot;
+wechat = &quot;htttp://www.baidu.com&quot;
+jianshu = &quot;http://www.jianshu.com/users/f5820a96231b/timeline&quot;
+github = &quot;http://www.baidu.com&quot;
+mail = &quot;mailto:xielm@qq.com&quot;
+guifan = &quot;/categories/产品规范/&quot;
+fenxi = &quot;/categories/产品分析/&quot;
+jiqiao = &quot;/categories/技巧分析/&quot;
+yanjiu = &quot;/categories/技术研究/&quot;
+demo = &quot;/categories/产品原型/&quot;
+profile = &quot;/images/ethan.png&quot;
+copyright = &quot;Written by Ethan，转载请注明出处，谢谢！&quot;
+</code></pre>
+
+<hr />
+
+<p><strong>添加文字分类页面入口</strong></p>
+
+<p>暂时不会为这个皮肤增加侧边栏（见其他的皮肤有过），因此选择在页脚部分添加文字分类入口</p>
+
+<p>首先看了下发文章时默认分类的存储地方，查文档发现在：<strong>/angels-ladder/archetypes/defoult.md</strong></p>
+
+<pre><code>+++
+Description = &quot;&quot;
+Tags = [&quot;规范&quot;, &quot;分析&quot;, &quot;技巧&quot;, &quot;研究&quot;,&quot;原型&quot;]
+Categories = [&quot;产品规范&quot;, &quot;产品分析&quot;, &quot;技巧分析&quot;, &quot;技术研究&quot;,&quot;产品原型&quot;]
++++
+</code></pre>
+
+<p>根据自己的文章需求，修改默认需要的 Tags 和 Categories，貌似在 执行hugo命令时，会根据此文件中的设置，在 public 下 tags 和 categories 文件夹下建立相关的文件夹；</p>
+
+<p>进入 <strong>/angels-ladder/layouts/partials/</strong> 文件夹，用编辑器打开 <strong>footer.html</strong> 文件
+在文件中插入如下代码</p>
+
+<pre><code>    &lt;div&gt;
+    &lt;br&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: center;&quot; id=&quot;social&quot;&gt;
+          {{ with .Site.Params.about }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;关于Ethan&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.demo }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;产品原型&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.guifan }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;产品规范&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.fenxi }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;产品分析&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.jiqiao }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;技巧分析&lt;/a&gt;&lt;/li&gt;{{ end }}
+          {{ with .Site.Params.yanjiu }}&lt;li&gt;&lt;a href=&quot;{{ . }}&quot; target=&quot;_blank&quot;&gt;技术研究&lt;/a&gt;&lt;/li&gt;{{ end }}
+    &lt;/div&gt;
+</code></pre>
+
+<p>也懒得调整太多样式，直接引用了 header 部分样式</p>
+
+<hr />
+
+<p><strong>添加文章摘要</strong></p>
+
+<p>分别找到
+<strong>/angels-ladder/layouts/_default/</strong> 中的 <strong>list.html</strong>
+<strong>/angels-ladder/layouts/</strong> 中的 <strong>index.html</strong></p>
+
+<p>添加 {{.Summary}} 部分的代码</p>
+
+<blockquote>
+<p>参考 hugo 的官方文档  <a href="http://gohugo.io/content/summaries/">http://gohugo.io/content/summaries/</a></p>
+</blockquote>
+
+<p>我的代码示例如下，这部分完全是生吞活剥，每想到最后还行了 <strong>：）</strong></p>
+
+<pre><code>&lt;main id=&quot;index&quot; role=&quot;main&quot;&gt;
+  &lt;div class=&quot;article-header light-gray&quot;&gt;&lt;h2&gt;最新文章&lt;/h2&gt;&lt;/div&gt;
+  {{ $paginator := .Paginate (where .Data.Pages &quot;Type&quot; &quot;post&quot;) }}
+  {{ range $paginator.Pages }}
+  &lt;div class=&quot;summary&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;meta&quot;&gt;
+      {{ .Date.Format &quot;Jan 2, 2006 &quot; }} &amp;nbsp;
+      {{ range .Params.tags }}
+        #&lt;a href=&quot;/tags/{{ . | urlize }}&quot;&gt;{{ . }}&lt;/a&gt;&amp;nbsp;
+        {{ end }}
+    &lt;/div&gt;
+      {{ .Summary }} &amp;nbsp;
+      {{ if .Truncated }}
+        &lt;div class=&quot;read-more-link&quot;&gt;
+        &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;Read More…&lt;/a&gt;
+        &lt;/div&gt;
+      {{ end }}
+  &lt;/div&gt;
+  {{ end }}
+&lt;/main&gt;
+</code></pre>
+
+<p>至此，theme 修改和个性化完毕，po 上 GitHub链接：</p>
+
+<blockquote>
+<p><a href="https://github.com/chaomifan/anglesladder.git">https://github.com/chaomifan/anglesladder.git</a></p>
+</blockquote>
+
+<p>后续有时间会持续更新一下</p>
+
+<ul>
+<li>社交账号的 foot-awsome 图标</li>
+<li>解决微信/微信公众号关注</li>
+<li>测试修改 bug 等</li>
+</ul>
+
+<hr />
+
+<p>##git 安装与部署</p>
+
+<p>将静态网站部署在GitHub 上比较简单，网上有较多的文章和教程，我主要的问题是 git 是现学的，同时还要解决几台电脑上 public 和 theme 文件夹的同步和修改，因此耗费了很多时间踩坑；</p>
+
+<p>git 全新部署只要建立 pbulic 文件夹的 git 并 git remote 远程仓库即可，大体步骤如下：</p>
+
+<ul>
+<li>登录 git 新建仓库 命名要以 <strong>yourgithubname.github.io</strong>, 具体原理本菜暂讲不太详细，可自行度娘；</li>
+<li>如果用 ssh 方式连接GitHub需先添加<strong>SSH keys</strong> 详见下文中的参考教程，不细说了；<br /></li>
+<li>在 pbulic 文件夹内建立 git；</li>
+</ul>
+
+<pre><code>$ echo &quot;xxxx&quot; &gt;&gt; README.md
+$ git init 
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git remote add origin git@github.com:yourgithubname/yourgithubname.github.io.git
+$ git push -u orgin master
+</code></pre>
+
+<p>以后每次 运行 hugo 命令 之后 使用如下命令将本地更新推送到 GitHub</p>
+
+<pre><code>$ git add -A
+$ git commit -m &quot;xxxx&quot;
+$ git push -u orgin master
+</code></pre>
+
+<blockquote>
+<p>参考教程 <a href="http://blog.csdn.net/hcbbt/article/details/11651229/">http://blog.csdn.net/hcbbt/article/details/11651229/</a></p>
+
+<p>参考教程 <a href="http://www.runoob.com/w3cnote/git-guide.html">http://www.runoob.com/w3cnote/git-guide.html</a></p>
+
+<p>参考教程 <a href="http://www.codesec.net/view/194341.html">http://www.codesec.net/view/194341.html</a></p>
+</blockquote>
+
+<p>现在，浏览器访问 yourgithubname.github.io 就应该能访问你的博客了</p>
+
+<h2 id="个性域名绑定">个性域名绑定</h2>
+
+<p>有条件和基础的同学可以购买自己的域名，绑定在 GitHub 博客的仓库上，具体在 <strong>GitHub 的 setting</strong> 中有详细步骤，本文不详述过程了</p>
+
+<blockquote>
+<p><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">https://help.github.com/articles/using-a-custom-domain-with-github-pages/</a></p>
+</blockquote>
+
+<h2 id="原型文件上传至-github-并浏览-实施之前看到的文章方法">原型文件上传至 GitHub 并浏览（实施之前看到的文章方法）</h2>
+
+<p>在网站上看到一位 PM 分享的干货，一直想实施（公司原型 page 服务器因安全问题被 技术总监 <strong>木头·丝毫不照顾我的感受·见</strong> 毫不留情的关闭了 ），因此顺手搞了下，也成功了；</p>
+
+<blockquote>
+<p>分享干货：<a href="http://www.chanpin100.com/article/101246">http://www.chanpin100.com/article/101246</a></p>
+</blockquote>
+
+<hr />
+
+<p><strong>写在最后</strong>
+做什么事情都不容易，因为是先折腾，后补文字，好些步骤，命令，代码和参考文章都是回头重新查找一遍的，但是感觉上还是很有收获，比如 git 就从无到有学习起来了，最好的学习还是实践，最好的老师还是兴趣；</p>
+
+<p><strong>如果觉得本文有用，还请打赏一下下，欢迎持续关注我的博客，对我持续研究和码字也是鞭策</strong></p>
+
+<p><img src="/images/post_img/dashang.png" alt="" /></p>
       
       
       
