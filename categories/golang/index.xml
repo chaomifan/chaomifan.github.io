@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on Ethan&#39;s PMbook</title>
+    <link>http://chaomifan.github.io/categories/golang/</link>
+    <description>Recent content in Golang on Ethan&#39;s PMbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Written by Ethan，转载请注明出处，谢谢！</copyright>
+    <lastBuildDate>Sun, 30 Apr 2017 07:37:30 +0800</lastBuildDate>
+    
+	<atom:link href="http://chaomifan.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何开始一篇博客</title>
+      <link>http://chaomifan.github.io/post/%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/post/%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description> 快速开始一篇博客的书写，测试测试测试！！！ </description>
+    </item>
+    
+  </channel>
+</rss>
