@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Written by Ethan，转载请注明出处，谢谢！</copyright>
-    <lastBuildDate>Mon, 01 May 2017 03:24:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 11:48:54 +0800</lastBuildDate>
     
 	<atom:link href="http://chaomifan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Demo</title>
+      <link>http://chaomifan.github.io/tags/demo/</link>
+      <pubDate>Mon, 01 May 2017 11:48:54 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/tags/demo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hugo</title>
