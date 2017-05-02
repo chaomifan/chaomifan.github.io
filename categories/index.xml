@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>产品原型</title>
-      <link>http://chaomifan.github.io/categories/%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B/</link>
-      <pubDate>Mon, 01 May 2017 11:48:54 +0800</pubDate>
+      <title>Development</title>
+      <link>http://chaomifan.github.io/categories/development/</link>
+      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
       
-      <guid>http://chaomifan.github.io/categories/%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B/</guid>
+      <guid>http://chaomifan.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://chaomifan.github.io/categories/golang/</link>
+      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
@@ -32,7 +41,7 @@
     <item>
       <title>技巧分析</title>
       <link>http://chaomifan.github.io/categories/%E6%8A%80%E5%B7%A7%E5%88%86%E6%9E%90/</link>
-      <pubDate>Mon, 01 May 2017 03:58:00 +0800</pubDate>
+      <pubDate>Mon, 01 May 2017 03:24:31 +0800</pubDate>
       
       <guid>http://chaomifan.github.io/categories/%E6%8A%80%E5%B7%A7%E5%88%86%E6%9E%90/</guid>
       <description></description>
