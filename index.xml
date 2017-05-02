@@ -7,18 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Written by Ethan，转载请注明出处，谢谢！</copyright>
-    <lastBuildDate>Mon, 01 May 2017 03:24:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 11:48:54 +0800</lastBuildDate>
     
 	<atom:link href="http://chaomifan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>折腾笔记</title>
+      <title>产品原型一则</title>
+      <link>http://chaomifan.github.io/post/%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E4%B8%80%E5%88%99/</link>
+      <pubDate>Mon, 01 May 2017 11:48:54 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/post/%E4%BA%A7%E5%93%81%E5%8E%9F%E5%9E%8B%E4%B8%80%E5%88%99/</guid>
+      <description>link：http://blog.xielm.cn/TOYOTA_game/</description>
+    </item>
+    
+    <item>
+      <title>About Ethan</title>
+      <link>http://chaomifan.github.io/about/</link>
+      <pubDate>Mon, 01 May 2017 10:39:35 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/about/</guid>
+      <description> 过往经历  曾供职于国内某服务器厂商 7年产品负责人 化妆品初创项目 产品经理 美业 o2o 项目 产品经理  现状  坐标：北京 公司：某初创公司 职位：产品总监 方向：iBeacon；B2B 企业服务；微信相关  兴趣爱好  硬件（PC，x86 Server） 数码 产品、产品经理相关 Markdown Mac 相关 GTD  </description>
+    </item>
+    
+    <item>
+      <title>Mweb介绍</title>
+      <link>http://chaomifan.github.io/post/mweb%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Mon, 01 May 2017 03:58:00 +0800</pubDate>
+      
+      <guid>http://chaomifan.github.io/post/mweb%E4%BB%8B%E7%BB%8D/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://zh.mweb.im/asset/img/cn/1-1.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;strong&gt;Mweb 是一款 markdown 编辑器，与 Ulyless各有千秋，在语法支持上，比 Ulyless 更胜一筹（主要是 Ulyless 自己阉割了部分语法支持，比如表格），缺点也是笔者比较头疼，不支持 iCloud 同步，不过貌似折腾一下也可以解决，笔者试着折腾完毕之后发文&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo&#43;GitHub 静态博客 折腾笔记</title>
       <link>http://chaomifan.github.io/post/%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Mon, 01 May 2017 03:24:31 +0800</pubDate>
       
       <guid>http://chaomifan.github.io/post/%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</guid>
-      <description> 五一折腾 hugo 纪实  hugo 安装 git 按照与部署 homebrew update iterm2 + oh-my-zsh update  </description>
+      <description>&lt;h2 id=&#34;为了个人博客&#34;&gt;为了个人博客&lt;/h2&gt;
+
+&lt;p&gt;五一期间，用 WordPress 为好朋友的公司配置了一个网站，替换原来的建议公司官网，在搭建的过程中，萌生了建立一个独立个人博客的想法，恰巧节前技术总监木头大大着重安利了 Hugo 这个静态博客建站工具，于是就开始了一天一夜的折腾之旅&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,17 +61,8 @@
       <pubDate>Mon, 01 May 2017 01:01:10 +0800</pubDate>
       
       <guid>http://chaomifan.github.io/post/%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E8%A7%82/</guid>
-      <description>  一个产品经理，首先要有自己的产品关
-如下，列举了个人认为的产品经理的产品关包含内容：  产品与人的关系，或者说产品与用户的关系； 产品经理与用户的关系； 产品经理的内驱力； 产品的构建方式； 产品与商业模式的关系； 产品目标与商业目标的关系； 产品经理与团队的关系；  任何一个产品或产品经理，都摆脱不了与世界，人和时间的关系 i am ethan, a PM from earth  </description>
-    </item>
-    
-    <item>
-      <title>如何开始一篇博客</title>
-      <link>http://chaomifan.github.io/post/%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
-      
-      <guid>http://chaomifan.github.io/post/%E5%A6%82%E4%BD%95%E5%BC%80%E5%A7%8B%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description> 快速开始一篇博客的书写，测试测试测试！！！ </description>
+      <description>&lt;p&gt;&lt;strong&gt; 一个产品经理，首先要有自己的产品关&lt;/strong&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

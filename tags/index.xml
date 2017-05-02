@@ -7,35 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Written by Ethan，转载请注明出处，谢谢！</copyright>
-    <lastBuildDate>Sun, 30 Apr 2017 07:37:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 11:48:54 +0800</lastBuildDate>
     
 	<atom:link href="http://chaomifan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>http://chaomifan.github.io/tags/development/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
+      <title>Demo</title>
+      <link>http://chaomifan.github.io/tags/demo/</link>
+      <pubDate>Mon, 01 May 2017 11:48:54 +0800</pubDate>
       
-      <guid>http://chaomifan.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>http://chaomifan.github.io/tags/go/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
-      
-      <guid>http://chaomifan.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>http://chaomifan.github.io/tags/golang/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
-      
-      <guid>http://chaomifan.github.io/tags/golang/</guid>
+      <guid>http://chaomifan.github.io/tags/demo/</guid>
       <description></description>
     </item>
     
@@ -49,20 +31,11 @@
     </item>
     
     <item>
-      <title>Templates</title>
-      <link>http://chaomifan.github.io/tags/templates/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
+      <title>Mweb</title>
+      <link>http://chaomifan.github.io/tags/mweb/</link>
+      <pubDate>Mon, 01 May 2017 03:58:00 +0800</pubDate>
       
-      <guid>http://chaomifan.github.io/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>http://chaomifan.github.io/tags/themes/</link>
-      <pubDate>Sun, 30 Apr 2017 07:37:30 +0800</pubDate>
-      
-      <guid>http://chaomifan.github.io/tags/themes/</guid>
+      <guid>http://chaomifan.github.io/tags/mweb/</guid>
       <description></description>
     </item>
     
